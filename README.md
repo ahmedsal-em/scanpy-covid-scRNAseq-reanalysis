@@ -10,15 +10,15 @@ The analysis is performed using **Python and Scanpy** to reproduce and explore t
 
 # Project Structure
 
-scanpy-covid-scRNAseq-reanalysis
+scanpy-covid-scRNAseq-reanalysis/
 │
-├── notebooks
-│ └── data_full_analysis.ipynb
+├── notebooks/
+│   └── data_full_analysis.ipynb
 │
-├── data
-│ └── GSE272840_ALO_viscRNAseq.h5ad
+├── data/
+│   └── GSE272840_ALO_viscRNAseq.h5ad
 │
-├── figures
+├── figures/
 │
 ├── README.md
 └── requirements.txt
