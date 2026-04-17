@@ -1,33 +1,28 @@
 # 🧬 Scanpy Re-analysis of SARS-CoV-2 viscRNA-seq Dataset (GSE272840)
 
-![Status](https://img.shields.io/badge/Status-Completed-success)
+![Status](https://img.shields.io/badge/status-complete-success)
+![Python](https://img.shields.io/badge/python-3.x-blue)
+![Scanpy](https://img.shields.io/badge/scanpy-scRNA--seq-orange)
 
-![Tool](https://img.shields.io/badge/Tool-Scanpy-blue)
+An independent **single-cell RNA-seq re-analysis** of **GSE272840** using **Python** and **Scanpy** to investigate:
 
-![Language](https://img.shields.io/badge/Language-Python-yellow)
-
-This repository presents an **independent re-analysis of single-cell RNA-seq data** from:
-
-**Karim et al., Nature Communications (2025)**  
-
-We use **Scanpy (Python)** to study:
-
-- 🦠 SARS-CoV-2 infection  
-
-- 💊 RMC-113 drug treatment  
-
-- 🧫 Epithelial cell-type responses  
+- 🦠 SARS-CoV-2 infection response
+- 🧫 epithelial cell-state structure
+- 💊 transcriptional effects of **RMC-113**
 
 ---
 
-## 📁 Project Structure
+## 📌 Overview
 
-scanpy-covid-scRNAseq-reanalysis/
-├── notebooks/
-├── data/
-├── figures/
-├── README.md
-└── requirements.txt
+This project reproduces and extends the analysis of a public **viscRNA-seq** dataset from alveolar organoids.  
+The workflow includes:
+
+- quality control and filtering
+- normalization and highly variable gene selection
+- PCA, UMAP, and Leiden clustering
+- marker-based cell-type interpretation
+- infection-response analysis
+- treatment-effect analysis
 
 ---
 
@@ -40,6 +35,26 @@ https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE272840
 
 Place the file in:
 data/GSE272840_ALO_viscRNAseq.h5ad
+
+---
+
+## 📁 Project Structure
+scanpy-covid-scRNAseq-reanalysis/
+├── notebooks/
+│   └── data_full_analysis.ipynb
+│
+├── data/
+│   └── GSE272840_ALO_viscRNAseq.h5ad
+│
+├── figures/
+│   ├── Figure_04_pca_variance.png
+│   ├── Figure_07_umap_celltypes.png
+│   ├── Figure_11_section_06_celltype_response_24h.png
+│   ├── Figure_12_section_07_celltype_abundance.png
+│   └── Figure_13_section_08_drug_effect_24h.png
+│
+├── README.md
+└── requirements.txt
 
 ---
 
@@ -115,6 +130,14 @@ pip install -r requirements.txt
 Ahmed Salem  
 
 Independent computational re-analysis using Python and Scanpy  
+
+---
+
+## 📄 Related Publication
+
+**Karim et al., Nature Communications (2025)**  
+
+🔗 [Single-cell viscRNA-seq analysis of SARS-CoV-2 infection in alveolar organoids](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE272840)
 
 ---
 
