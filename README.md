@@ -39,6 +39,8 @@ data/GSE272840_ALO_viscRNAseq.h5ad
 ---
 
 ## 📁 Project Structure
+
+```
 scanpy-covid-scRNAseq-reanalysis/
 ├── notebooks/
 │   └── data_full_analysis.ipynb
@@ -55,6 +57,7 @@ scanpy-covid-scRNAseq-reanalysis/
 │
 ├── README.md
 └── requirements.txt
+```
 
 ---
 
